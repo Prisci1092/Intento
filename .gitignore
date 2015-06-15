@@ -1,0 +1,20 @@
+#ifndef ELEMENTO_H
+#define ELEMENTO_H
+
+// Definir acá el tipo de dato a utilizar.
+typedef int tipo;
+
+class Elemento
+{
+    public:
+        Elemento();
+        virtual ~Elemento();
+        inline tipo getValor(){return valor;};
+        void setValor(tipo v){valor = v;};
+
+    protected:
+        tipo valor;
+
+};
+
+#endif // ELEMENTO_H
